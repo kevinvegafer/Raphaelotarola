@@ -1,0 +1,1229 @@
+@charset "UTF-8";
+@import url(./fonts.css);
+@import url(./reset.css);
+#wrap {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+#wrap #header {
+  z-index: 2;
+  position: fixed;
+  width: 250px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+#wrap #header .container {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap {
+  width: 100%;
+  height: 100%;
+  padding: 60px 25px;
+}
+#wrap #header .container .gap .content {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content .top {
+  width: 100%;
+  height: 71.891px;
+  padding: 0 15px 19.891px 15px;
+}
+#wrap #header .container .gap .content .top a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 11px 0;
+}
+#wrap #header .container .gap .content .top a img {
+  width: 156px;
+  height: 100%;
+}
+#wrap #header .container .gap .content .mid {
+  width: 100%;
+  padding: 0 15px;
+  margin: 29.844px 0;
+}
+#wrap #header .container .gap .content .mid ul {
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content .mid ul li {
+  position: relative;
+  width: 100%;
+  height: 54px;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrap #header .container .gap .content .mid ul li a {
+  display: block;
+  position: relative;
+  padding: 0 0 0 15px;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 20px;
+  margin: 0 auto 0 0;
+}
+#wrap #header .container .gap .content .mid ul li a::before {
+  position: absolute;
+  left: -1px;
+  top: 9px;
+  content: "";
+  width: 6px;
+  height: 2px;
+  background: #ef106e;
+}
+#wrap #header .container .gap .content .mid ul li a.on::before {
+  position: absolute;
+  left: -1px;
+  top: 9px;
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: #ef106e;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .content .mid ul li a:hover::before {
+  position: absolute;
+  left: -1px;
+  top: 9px;
+  content: "";
+  width: 130px;
+  height: 1px;
+  background: #ef106e;
+  transition: all 0.3s;
+}
+#wrap #header .container .gap .content .bottom {
+  width: 100%;
+  padding: 25.344px 15px 0 15px;
+}
+#wrap #header .container .gap .content .bottom .icon {
+  display: flex;
+}
+#wrap #header .container .gap .content .bottom .icon a {
+  display: block;
+  margin: 0 10px;
+}
+#wrap #header .container .gap .content .bottom .icon a i {
+  font-size: 16px;
+  color: #575757;
+  margin: 0 0 0 5px;
+}
+#wrap #header .container .gap .content .bottom .icon:nth-child(1) {
+  margin: 0 10px 0 0;
+}
+#wrap #header .container .gap .content .bottom .icon:nth-child(3) {
+  margin: 0 0 0 10px;
+}
+#wrap #header .container .gap .content #mobileNav {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+#wrap #header .container .gap .content #mobileNav a {
+  display: block;
+  padding: 11px 0;
+}
+#wrap #header .container .gap .content #mobileNav a img {
+  width: 156px;
+  height: 100%;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn {
+  display: block;
+  width: 44px;
+  height: 32px;
+  position: relative;
+  background: #000;
+  display: flex;
+  align-items: center;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i {
+  position: absolute;
+  left: 11px;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line1 {
+  top: 10px;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line2 {
+  top: 50%;
+}
+#wrap #header .container .gap .content #mobileNav .mobile-btn i.line3 {
+  bottom: 8px;
+}
+#wrap #header .container .gap .content #accordian {
+  display: none;
+  width: 100%;
+  background: #fff;
+}
+#wrap #header .container .gap .content #accordian.on {
+  display: block;
+}
+#wrap #header .container .gap .content #accordian ul {
+  width: 100%;
+  padding: 15px 0 0 0;
+}
+#wrap #header .container .gap .content #accordian ul li {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrap #main {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  max-width: 1903px;
+  padding: 0 0 0 250px;
+}
+#wrap #main #section1 {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  cursor: url(../img/icon-move-light.png), auto;
+}
+#wrap #main #section1 .container {
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 .container .title {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+#wrap #main #section1 .container .title .content {
+  width: 70.78%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#wrap #main #section1 .container .title .content div {
+  width: 100%;
+}
+#wrap #main #section1 .container .title .content div h3 {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #fff;
+}
+#wrap #main #section1 .container .title .content div h2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #fff;
+}
+#wrap #main #section1 .container .title .content div p {
+  width: 305.891px;
+  height: 33px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  color: #ef106e;
+  background-color: #000;
+  padding: 5px 15px;
+  margin: 23.391px 0;
+}
+#wrap #main #section1 .container .slide-container {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view {
+  width: 100%;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap {
+  pointer-events: none;
+  position: relative;
+  width: 300%;
+  display: flex;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide {
+  width: 100%;
+  height: 100vh;
+  background: url() no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide1 {
+  background-image: url(../img/personal-img1.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide2 {
+  background-image: url(../img/personal-img22.jpg);
+}
+#wrap #main #section1 .container .slide-container .slide-view .slide-wrap .slide.slide3 {
+  background-image: url(../img/personal-img23.jpg);
+}
+#wrap #main #section1 .container .page-btn-box {
+  z-index: 2;
+  position: absolute;
+  bottom: 37px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+#wrap #main #section1 .container .page-btn-box span {
+  margin: 0 5px;
+}
+#wrap #main #section1 .container .page-btn-box span a {
+  display: inline-block;
+  width: 28px;
+  height: 3px;
+  background: #626262;
+}
+#wrap #main #section1 .container .page-btn-box span a.on {
+  background: rgb(255, 255, 255);
+}
+#wrap #main #section2 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/personal-img2.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section2 .container {
+  width: 70.78%;
+  height: 500px;
+  margin: 0 auto;
+}
+#wrap #main #section2 .container .gap {
+  width: 390px;
+  padding: 0 15px;
+}
+#wrap #main #section2 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #section2 .container .gap .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  margin: 0 0 46.797px 0;
+}
+#wrap #main #section2 .container .gap .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section2 .container .gap .content .text p {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.26px;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section2 .container .gap .content .text ul {
+  margin: 21.594px 0 0 0;
+}
+#wrap #main #section2 .container .gap .content .text ul li {
+  font-size: 13px;
+  font-weight: 500;
+  padding: 13px 0 13px 18px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+#wrap #main #section2 .container .gap .content .text ul li span {
+  display: inline-block;
+  width: 110px;
+  height: 23px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+}
+#wrap #main #section2 .container .gap .content .text ul:nth-child(5) {
+  border: 0;
+}
+#wrap #main #section2 .container .gap .content .text ul a {
+  display: block;
+  width: 210.078px;
+  height: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 21.594px 0 0 0;
+  background-color: #000;
+  padding: 10px 22px;
+  color: #fff;
+  border: 2px solid #000;
+}
+#wrap #main #section2 .container .gap .content .text ul a:hover {
+  background-color: #fff;
+  color: #000;
+}
+#wrap #main #section3 {
+  width: 100%;
+  padding: 130px 0;
+  background: #f7f7f7;
+}
+#wrap #main #section3 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section3 .container .gap {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 81.891px 0;
+}
+#wrap #main #section3 .container .gap .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section3 .container .gap .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section3 .container .gap .content .text {
+  width: 100%;
+}
+#wrap #main #section3 .container .gap .content .text ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section3 .container .gap .content .text ul li {
+  width: 33%;
+  display: flex;
+  padding: 0 15px;
+  margin: 0 0 46.797px 0;
+}
+#wrap #main #section3 .container .gap .content .text ul li .icon {
+  width: 16.66%;
+}
+#wrap #main #section3 .container .gap .content .text ul li .icon i {
+  font-size: 40px;
+  font-weight: 400;
+  color: #9a9a9a;
+}
+#wrap #main #section3 .container .gap .content .text ul li div {
+  width: 83.33%;
+}
+#wrap #main #section3 .container .gap .content .text ul li div h4 {
+  font-size: 13px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  color: #000;
+  margin: 0 0 6px 0;
+}
+#wrap #main #section3 .container .gap .content .text ul li div p {
+  font-size: 13px;
+  font-family: "Roboto";
+  color: #626262;
+  line-height: 23px;
+  letter-spacing: 0.26px;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section4 {
+  width: 100%;
+  padding: 66.109px 0;
+  background: #ffd800;
+}
+#wrap #main #section4 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section4 .container ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section4 .container ul li {
+  position: relative;
+  width: 25%;
+  padding: 0 15px;
+  display: flex;
+}
+#wrap #main #section4 .container ul li div {
+  width: 16.67%;
+  position: relative;
+}
+#wrap #main #section4 .container ul li div i {
+  display: block;
+  position: absolute;
+  top: 13px;
+  width: 50%;
+  left: 25%;
+  height: 6px;
+  background: #fff;
+  margin: 3.25 25%;
+}
+#wrap #main #section4 .container ul li .text {
+  width: 83.33%;
+}
+#wrap #main #section4 .container ul li .text span {
+  display: block;
+  width: 100%;
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+}
+#wrap #main #section4 .container ul li .text h4 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #000;
+  line-height: 20px;
+  margin: 4.375px 0;
+}
+#wrap #main #section5 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/personal-img3.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section5 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section5 .container .content {
+  width: 66.66%;
+}
+#wrap #main #section5 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 45px 0;
+}
+#wrap #main #section5 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+}
+#wrap #main #section5 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section5 .container .content .text p {
+  width: 90%;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  margin: 0 0 10px 0;
+  color: #626262;
+  line-height: 22px;
+  letter-spacing: 0.26px;
+  padding: 0 15px;
+}
+#wrap #main #section5 .container .content .text i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 45px 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+#wrap #main #section5 .container .content .text ul {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0 15px;
+}
+#wrap #main #section5 .container .content .text ul li {
+  width: 50%;
+  height: 82.013px;
+  display: flex;
+  margin: 0 0 52.5px 0;
+}
+#wrap #main #section5 .container .content .text ul li h2 {
+  width: 62.6px;
+  font-size: 28px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 34px;
+  color: #ababab;
+}
+#wrap #main #section5 .container .content .text ul li div {
+  padding: 0 0 0 11.25px;
+}
+#wrap #main #section5 .container .content .text ul li div h4 {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #000;
+  margin: 0 0 9.031px;
+}
+#wrap #main #section5 .container .content .text ul li div h3 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  color: #929292;
+}
+#wrap #main #section5 .container .content .text ul li:nth-child(3) {
+  margin: 0;
+}
+#wrap #main #section5 .container .content .text ul li:nth-child(4) {
+  margin: 0;
+}
+#wrap #main #section5 .container .content .text span p {
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  padding: 0 0 0 85px;
+  color: #626262;
+}
+#wrap #main #section5 .container .content .text span p::before {
+  content: "“";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 62px;
+  font-size: 200px;
+  color: #ef106e;
+}
+#wrap #main #section6 {
+  width: 100%;
+  padding: 130px 0;
+  background: #f7f7f7;
+}
+#wrap #main #section6 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section6 .container .content {
+  width: 100%;
+}
+#wrap #main #section6 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 81.891px 0;
+}
+#wrap #main #section6 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section6 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section6 .container .content .text ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section6 .container .content .text ul li {
+  width: 25%;
+  padding: 0 15px;
+}
+#wrap #main #section6 .container .content .text ul li h3 {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #000;
+}
+#wrap #main #section6 .container .content .text ul li h4 {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #929292;
+}
+#wrap #main #section6 .container .content .text ul li h5 {
+  z-index: 2;
+  position: relative;
+  width: 85.19px;
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #fff;
+  background-color: #000;
+  padding: 2px 13px;
+  margin: 10px 0 15px 0;
+}
+#wrap #main #section6 .container .content .text ul li h5::after {
+  content: "";
+  width: 200%;
+  z-index: 1;
+  position: absolute;
+  top: 13px;
+  border-bottom: 1px solid #000;
+}
+#wrap #main #section6 .container .content .text ul li p {
+  font-size: 13px;
+  font-family: "Roboto";
+  line-height: 23px;
+  color: #626262;
+}
+#wrap #main #section7 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/personal-img4.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section7 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section7 .container .gap {
+  width: 50%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 0 0 auto;
+}
+#wrap #main #section7 .container .gap .content p {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 30px;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section7 .container .gap .content i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+  margin: 33.297px 0;
+}
+#wrap #main #section7 .container .gap .content ul {
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section7 .container .gap .content ul li {
+  display: flex;
+  width: 50%;
+}
+#wrap #main #section7 .container .gap .content ul li h2 {
+  width: 16.67%;
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #000;
+}
+#wrap #main #section7 .container .gap .content ul li h4 {
+  width: 83.33%;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 18px;
+  color: #fff;
+  padding: 0 0 0 8%;
+}
+#wrap #main #section8 {
+  width: 100%;
+  padding: 130px 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+#wrap #main #section8 .container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+#wrap #main #section8 .container .content {
+  width: 100%;
+}
+#wrap #main #section8 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 70.188px 0;
+}
+#wrap #main #section8 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section8 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section8 .container .content .img_content {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #section8 .container .content .img_content .text {
+  width: 25%;
+  padding: 0 15px;
+}
+#wrap #main #section8 .container .content .img_content .text ul {
+  width: 100%;
+}
+#wrap #main #section8 .container .content .img_content .text ul li {
+  width: 100%;
+}
+#wrap #main #section8 .container .content .img_content .text ul li a {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #9b9b9b;
+  padding: 10px 21px 10px 15px;
+  line-height: 17px;
+  transition: all 0.3s;
+}
+#wrap #main #section8 .container .content .img_content .text ul li a:hover {
+  color: #000;
+}
+#wrap #main #section8 .container .content .img_content .text ul li a.on {
+  color: #000;
+}
+#wrap #main #section8 .container .content .img_content .text ul li a.on::before {
+  position: absolute;
+  left: -1px;
+  top: 18px;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #ef106e;
+}
+#wrap #main #section8 .container .content .img_content .text ul li:nth-child(1) {
+  width: 65.594px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li:nth-child(2) {
+  width: 124.312px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li:nth-child(3) {
+  width: 97.734px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li:nth-child(4) {
+  width: 119.219px;
+}
+#wrap #main #section8 .container .content .img_content .text ul li:nth-child(5) {
+  width: 161.469px;
+}
+#wrap #main #section8 .container .content .img_content .img {
+  width: 75%;
+  padding: 0 15px;
+}
+#wrap #main #section8 .container .content .img_content .img ul {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section8 .container .content .img_content .img ul li {
+  width: 50%;
+  transition: all 0.5s;
+  padding: 0 0 22px 22px;
+  position: absolute;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box.addZoom {
+  transform: scale(1);
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+  opacity: 0.1;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover img {
+  z-index: 1;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box img:hover div {
+  z-index: 3;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div {
+  z-index: 1;
+  width: 100%;
+  position: absolute;
+  top: 48%;
+  left: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 25px;
+  color: #000;
+  text-align: center;
+  padding: 0 0 5px 0;
+}
+#wrap #main #section8 .container .content .img_content .img ul li a .img-box div h4 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 2px;
+  color: #626262;
+  padding: 5px 0 0 0;
+  text-align: center;
+}
+#wrap #main #section9 {
+  width: 100%;
+  padding: 130px 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+}
+#wrap #main #section9 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section9 .container .content {
+  width: 100%;
+}
+#wrap #main #section9 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 70.188px 0;
+}
+#wrap #main #section9 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section9 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section9 .container .content .text {
+  width: 100%;
+}
+#wrap #main #section9 .container .content .text ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section9 .container .content .text ul li {
+  width: 33.33%;
+  padding: 58.5px 50.688px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(1) {
+  background: #fdd947;
+  outline: 5px solid rgba(255, 255, 255, 0.25);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(3) {
+  outline: 5px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(5) {
+  background: #ef106e;
+  outline: 5px solid rgba(0, 0, 0, 0.1);
+  outline-offset: -20px;
+}
+#wrap #main #section9 .container .content .text ul li:nth-child(5) p {
+  color: #fff;
+}
+#wrap #main #section9 .container .content .text ul li:hover p {
+  margin: 10% 0 15% 0;
+  transition: all 0.3s;
+}
+#wrap #main #section9 .container .content .text ul li:hover p::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  font-size: 120px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+#wrap #main #section9 .container .content .text ul li p {
+  position: relative;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  color: #000;
+  line-height: 27px;
+  margin: 15% 0 10% 0;
+}
+#wrap #main #section9 .container .content .text ul li p::before {
+  content: "“";
+  position: absolute;
+  left: 0;
+  top: -15px;
+  font-size: 120px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.5);
+}
+#wrap #main #section9 .container .content .text ul li h4 {
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  line-height: 23px;
+  color: #626262;
+}
+#wrap #main #section9 .container .content .text ul li h5 {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  line-height: 20px;
+  color: #626262;
+}
+#wrap #main #section10 {
+  width: 100%;
+  padding: 130px 0;
+  background: url(../img/personal-img15.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #section10 .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #section10 .container .content {
+  width: 50%;
+}
+#wrap #main #section10 .container .content .title {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 0 70.188px 0;
+}
+#wrap #main #section10 .container .content .title h2 {
+  position: relative;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 34px;
+  color: #000;
+  padding: 0 0 25px 0;
+}
+#wrap #main #section10 .container .content .title h2::before {
+  position: absolute;
+  top: 15px;
+  left: -30px;
+  content: "";
+  width: 12px;
+  border-bottom: 4px solid #ef106e;
+}
+#wrap #main #section10 .container .content .text .top {
+  width: 100%;
+}
+#wrap #main #section10 .container .content .text .top ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+#wrap #main #section10 .container .content .text .top ul li {
+  width: 50%;
+  display: flex;
+}
+#wrap #main #section10 .container .content .text .top ul li i {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ababab;
+  padding: 0 3.75px 0 15px;
+}
+#wrap #main #section10 .container .content .text .top ul li h3 {
+  width: 243.75px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #626262;
+  line-height: 23px;
+  padding: 0 15px;
+  margin: 0 0 10px 0;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap {
+  width: 100%;
+  padding: 0 15px;
+  margin: 35.094px 0 0 0;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap {
+  width: 100%;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm {
+  width: 100%;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul {
+  width: 100%;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li input {
+  width: 100%;
+  height: 47px;
+  padding: 12px 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat";
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li input::-moz-placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li input::placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li select {
+  width: 100%;
+  height: 47px;
+  padding: 12px 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: #fff url(../img/select-arrow.png) no-repeat 98% 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea {
+  width: 100%;
+  height: 93px;
+  padding: 15px 12px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea::-moz-placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li textarea::placeholder {
+  color: #ccc;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button {
+  width: 86.72px;
+  height: 46.563px;
+  background: #000;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: "Montserrat";
+  padding: 12px 15px;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button::-moz-placeholder {
+  color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button::placeholder {
+  color: #626262;
+}
+#wrap #main #section10 .container .content .text .bottom .col-gap .content-wrap #messageForm ul li button:hover {
+  color: #000;
+  background: #fff;
+}
+#wrap #main #footer {
+  width: 100%;
+  background: url(../img/bg.jpg) no-repeat 50% 50%;
+  background-size: cover;
+}
+#wrap #main #footer .container {
+  width: 70.78%;
+  margin: 0 auto;
+}
+#wrap #main #footer .container .content {
+  width: 100%;
+}
+#wrap #main #footer .container .content .top {
+  width: 100%;
+  padding: 57px 0;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+}
+#wrap #main #footer .container .content .top .icon {
+  width: 780px;
+  padding: 0 15px;
+}
+#wrap #main #footer .container .content .top .icon ul {
+  width: 100%;
+  display: flex;
+}
+#wrap #main #footer .container .content .top .icon ul li {
+  margin: 0 25px;
+}
+#wrap #main #footer .container .content .top .icon ul li i {
+  display: block;
+  font-size: 26px;
+  line-height: 30px;
+}
+#wrap #main #footer .container .content .top .icon ul .first {
+  margin: 0 25px 0 0;
+}
+#wrap #main #footer .container .content .top .icon ul .last {
+  margin: 0 0 0 25px;
+}
+#wrap #main #footer .container .content .top .mark {
+  width: 390px;
+  padding: 0 15px;
+}
+#wrap #main #footer .container .content .top .mark img {
+  display: block;
+  height: 30px;
+  margin: 0 0 0 auto;
+}
+#wrap #main #footer .container .content .bottom {
+  width: 100%;
+}
+#wrap #main #footer .container .content .bottom .text {
+  width: 100%;
+  padding: 30px 0;
+}
+#wrap #main #footer .container .content .bottom .text p {
+  font-size: 11px;
+  font-weight: 500;
+  font-family: "Montserrat";
+  color: #626262;
+  text-align: center;
+  line-height: 23px;
+}
